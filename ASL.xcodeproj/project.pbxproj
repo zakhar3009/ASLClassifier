@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E1A07D82C1E51CB00E80C40 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1A07D72C1E51CB00E80C40 /* Extensions.swift */; };
+		7E6289C02C1D80AF0060B63F /* ASLClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7E6289BF2C1D80AF0060B63F /* ASLClassifier.mlmodel */; };
 		7E7FC6E72C1CEC6E00C814C8 /* ASLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FC6E62C1CEC6E00C814C8 /* ASLApp.swift */; };
 		7E7FC6E92C1CEC6E00C814C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FC6E82C1CEC6E00C814C8 /* ContentView.swift */; };
 		7E7FC6EB2C1CEC6F00C814C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7FC6EA2C1CEC6F00C814C8 /* Assets.xcassets */; };
 		7E7FC6EE2C1CEC6F00C814C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7FC6ED2C1CEC6F00C814C8 /* Preview Assets.xcassets */; };
+		7E7FC6F72C1CED0A00C814C8 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FC6F62C1CED0A00C814C8 /* CameraView.swift */; };
+		7E7FC6F92C1CED4E00C814C8 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FC6F82C1CED4E00C814C8 /* CameraViewController.swift */; };
+		7E7FC6FD2C1CF35000C814C8 /* MyHandPoseClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FC6FC2C1CF35000C814C8 /* MyHandPoseClassifier.mlmodel */; };
+		7EF964F92C1E4A300003EE99 /* MyNewHandPoseClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7EF964F82C1E4A300003EE99 /* MyNewHandPoseClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E1A07D72C1E51CB00E80C40 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7E6289BF2C1D80AF0060B63F /* ASLClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ASLClassifier.mlmodel; sourceTree = "<group>"; };
 		7E7FC6E32C1CEC6E00C814C8 /* ASL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7FC6E62C1CEC6E00C814C8 /* ASLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLApp.swift; sourceTree = "<group>"; };
 		7E7FC6E82C1CEC6E00C814C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7E7FC6EA2C1CEC6F00C814C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E7FC6ED2C1CEC6F00C814C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7E7FC6F62C1CED0A00C814C8 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		7E7FC6F82C1CED4E00C814C8 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		7E7FC6FC2C1CF35000C814C8 /* MyHandPoseClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyHandPoseClassifier.mlmodel; sourceTree = "<group>"; };
+		7EF964F82C1E4A300003EE99 /* MyNewHandPoseClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyNewHandPoseClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,12 @@
 			children = (
 				7E7FC6E62C1CEC6E00C814C8 /* ASLApp.swift */,
 				7E7FC6E82C1CEC6E00C814C8 /* ContentView.swift */,
+				7E7FC6F62C1CED0A00C814C8 /* CameraView.swift */,
+				7E6289BF2C1D80AF0060B63F /* ASLClassifier.mlmodel */,
+				7E7FC6F82C1CED4E00C814C8 /* CameraViewController.swift */,
+				7E1A07D72C1E51CB00E80C40 /* Extensions.swift */,
+				7EF964F82C1E4A300003EE99 /* MyNewHandPoseClassifier.mlmodel */,
+				7E7FC6FC2C1CF35000C814C8 /* MyHandPoseClassifier.mlmodel */,
 				7E7FC6EA2C1CEC6F00C814C8 /* Assets.xcassets */,
 				7E7FC6EC2C1CEC6F00C814C8 /* Preview Content */,
 			);
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E6289C02C1D80AF0060B63F /* ASLClassifier.mlmodel in Sources */,
+				7E7FC6F92C1CED4E00C814C8 /* CameraViewController.swift in Sources */,
+				7E7FC6F72C1CED0A00C814C8 /* CameraView.swift in Sources */,
+				7E1A07D82C1E51CB00E80C40 /* Extensions.swift in Sources */,
 				7E7FC6E92C1CEC6E00C814C8 /* ContentView.swift in Sources */,
+				7EF964F92C1E4A300003EE99 /* MyNewHandPoseClassifier.mlmodel in Sources */,
 				7E7FC6E72C1CEC6E00C814C8 /* ASLApp.swift in Sources */,
+				7E7FC6FD2C1CF35000C814C8 /* MyHandPoseClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +299,8 @@
 				DEVELOPMENT_TEAM = 8VWX434V59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera for hand pose classification";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +330,8 @@
 				DEVELOPMENT_TEAM = 8VWX434V59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera for hand pose classification";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

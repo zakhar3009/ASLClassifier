@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var handPoseClassifier = CameraViewController()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            ARViewContainer(handPoseClassifier: handPoseClassifier)
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                if let predictionResult = handPoseClassifier.predictionResult {
+                    Text("Prediction: \(predictionResult)")
+                        .padding()
+                        .background(Color.black.opacity(0.7))
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        .padding()
+                }
+                
+                Spacer()
+            }
         }
-        .padding()
     }
 }
 
