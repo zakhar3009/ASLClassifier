@@ -4,13 +4,13 @@
 //
 //  Created by Zakhar Litvinchuk on 15.06.2024.
 //
+import ARKit
 import AVFoundation
+import SwiftUI
 import UIKit
 import Vision
-import ARKit
-import SwiftUI
 
-enum errors: Error{
+enum errors: Error {
     case CameraError
 }
 
@@ -19,7 +19,7 @@ class ASLClassifier: ObservableObject {
     private let handPoseClassifier: MyHandPoseClassifier
     @Published var predictionResult: String?
     @Published var errorMessage: String?
-    
+
     init() {
         do {
             handPoseClassifier = try MyHandPoseClassifier(configuration: MLModelConfiguration())
@@ -27,8 +27,8 @@ class ASLClassifier: ObservableObject {
             fatalError("Failed to load MLModel")
         }
     }
-    
-    func detectSign(handImage: UIImage) -> String? {
+
+    func detectSign(handImage: UIImage) -> [String: Double]? {
         if let pixelBuffer = handImage.toCVPixelBuffer() {
             let handler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer, orientation: .up, options: [:])
             handPoseRequest.maximumHandCount = 1
@@ -41,7 +41,7 @@ class ASLClassifier: ObservableObject {
                 guard let keypointsMultiArray = try? observation.keypointsMultiArray()
                 else { fatalError() }
                 let output: MyHandPoseClassifierOutput = try handPoseClassifier.prediction(poses: keypointsMultiArray)
-                return output.label
+                return output.labelProbabilities
             } catch let e {
                 self.errorMessage = e.localizedDescription
                 fatalError(e.localizedDescription)
