@@ -7,28 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F19CEC82C1EEA3700930AE2 /* LetterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F19CEC72C1EEA3700930AE2 /* LetterButton.swift */; };
+		2F19CECA2C1EEF1600930AE2 /* LetterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F19CEC92C1EEF1600930AE2 /* LetterViewModel.swift */; };
 		7E1A07D82C1E51CB00E80C40 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1A07D72C1E51CB00E80C40 /* Extensions.swift */; };
 		7E6289C02C1D80AF0060B63F /* ASLClassifierModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7E6289BF2C1D80AF0060B63F /* ASLClassifierModel.mlmodel */; };
 		7E7FC6E72C1CEC6E00C814C8 /* ASLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FC6E62C1CEC6E00C814C8 /* ASLApp.swift */; };
-		7E7FC6E92C1CEC6E00C814C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FC6E82C1CEC6E00C814C8 /* ContentView.swift */; };
+		7E7FC6E92C1CEC6E00C814C8 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FC6E82C1CEC6E00C814C8 /* MainScreen.swift */; };
 		7E7FC6EB2C1CEC6F00C814C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7FC6EA2C1CEC6F00C814C8 /* Assets.xcassets */; };
 		7E7FC6EE2C1CEC6F00C814C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7FC6ED2C1CEC6F00C814C8 /* Preview Assets.xcassets */; };
 		7E7FC6F72C1CED0A00C814C8 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FC6F62C1CED0A00C814C8 /* ImagePickerView.swift */; };
 		7E7FC6F92C1CED4E00C814C8 /* ASLClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FC6F82C1CED4E00C814C8 /* ASLClassifier.swift */; };
 		7E7FC6FD2C1CF35000C814C8 /* MyHandPoseClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FC6FC2C1CF35000C814C8 /* MyHandPoseClassifier.mlmodel */; };
+		7EF71FE62C1F0D06009BE2CC /* ASLViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF71FE52C1F0D06009BE2CC /* ASLViewModel.swift */; };
+		7EF71FE82C1F12A9009BE2CC /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF71FE72C1F12A9009BE2CC /* CameraView.swift */; };
+		7EF71FEA2C1F13C6009BE2CC /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF71FE92C1F13C6009BE2CC /* BackButton.swift */; };
+		7EF71FEC2C1F167F009BE2CC /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF71FEB2C1F167F009BE2CC /* AnswerView.swift */; };
+		7EF71FEE2C1F228D009BE2CC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF71FED2C1F228D009BE2CC /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F19CEC72C1EEA3700930AE2 /* LetterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterButton.swift; sourceTree = "<group>"; };
+		2F19CEC92C1EEF1600930AE2 /* LetterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterViewModel.swift; sourceTree = "<group>"; };
 		7E1A07D72C1E51CB00E80C40 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7E6289BF2C1D80AF0060B63F /* ASLClassifierModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ASLClassifierModel.mlmodel; sourceTree = "<group>"; };
 		7E7FC6E32C1CEC6E00C814C8 /* ASL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7FC6E62C1CEC6E00C814C8 /* ASLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLApp.swift; sourceTree = "<group>"; };
-		7E7FC6E82C1CEC6E00C814C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7E7FC6E82C1CEC6E00C814C8 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		7E7FC6EA2C1CEC6F00C814C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E7FC6ED2C1CEC6F00C814C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7E7FC6F62C1CED0A00C814C8 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		7E7FC6F82C1CED4E00C814C8 /* ASLClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLClassifier.swift; sourceTree = "<group>"; };
 		7E7FC6FC2C1CF35000C814C8 /* MyHandPoseClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyHandPoseClassifier.mlmodel; sourceTree = "<group>"; };
+		7EF71FE52C1F0D06009BE2CC /* ASLViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLViewModel.swift; sourceTree = "<group>"; };
+		7EF71FE72C1F12A9009BE2CC /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		7EF71FE92C1F13C6009BE2CC /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		7EF71FEB2C1F167F009BE2CC /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
+		7EF71FED2C1F228D009BE2CC /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +75,20 @@
 		7E7FC6E52C1CEC6E00C814C8 /* ASL */ = {
 			isa = PBXGroup;
 			children = (
-				7E7FC6E62C1CEC6E00C814C8 /* ASLApp.swift */,
-				7E7FC6E82C1CEC6E00C814C8 /* ContentView.swift */,
-				7E7FC6F62C1CED0A00C814C8 /* ImagePickerView.swift */,
 				7E6289BF2C1D80AF0060B63F /* ASLClassifierModel.mlmodel */,
+				7E7FC6FC2C1CF35000C814C8 /* MyHandPoseClassifier.mlmodel */,
+				7E7FC6E62C1CEC6E00C814C8 /* ASLApp.swift */,
+				7E7FC6E82C1CEC6E00C814C8 /* MainScreen.swift */,
+				7EF71FE72C1F12A9009BE2CC /* CameraView.swift */,
+				7EF71FED2C1F228D009BE2CC /* DataService.swift */,
+				7EF71FEB2C1F167F009BE2CC /* AnswerView.swift */,
+				7E7FC6F62C1CED0A00C814C8 /* ImagePickerView.swift */,
+				7EF71FE52C1F0D06009BE2CC /* ASLViewModel.swift */,
+				2F19CEC72C1EEA3700930AE2 /* LetterButton.swift */,
+				7EF71FE92C1F13C6009BE2CC /* BackButton.swift */,
+				2F19CEC92C1EEF1600930AE2 /* LetterViewModel.swift */,
 				7E7FC6F82C1CED4E00C814C8 /* ASLClassifier.swift */,
 				7E1A07D72C1E51CB00E80C40 /* Extensions.swift */,
-				7E7FC6FC2C1CF35000C814C8 /* MyHandPoseClassifier.mlmodel */,
 				7E7FC6EA2C1CEC6F00C814C8 /* Assets.xcassets */,
 				7E7FC6EC2C1CEC6F00C814C8 /* Preview Content */,
 			);
@@ -153,10 +174,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E6289C02C1D80AF0060B63F /* ASLClassifierModel.mlmodel in Sources */,
+				7EF71FEE2C1F228D009BE2CC /* DataService.swift in Sources */,
+				2F19CEC82C1EEA3700930AE2 /* LetterButton.swift in Sources */,
+				7EF71FEC2C1F167F009BE2CC /* AnswerView.swift in Sources */,
 				7E7FC6F92C1CED4E00C814C8 /* ASLClassifier.swift in Sources */,
+				7EF71FE62C1F0D06009BE2CC /* ASLViewModel.swift in Sources */,
+				2F19CECA2C1EEF1600930AE2 /* LetterViewModel.swift in Sources */,
 				7E7FC6F72C1CED0A00C814C8 /* ImagePickerView.swift in Sources */,
 				7E1A07D82C1E51CB00E80C40 /* Extensions.swift in Sources */,
-				7E7FC6E92C1CEC6E00C814C8 /* ContentView.swift in Sources */,
+				7EF71FE82C1F12A9009BE2CC /* CameraView.swift in Sources */,
+				7EF71FEA2C1F13C6009BE2CC /* BackButton.swift in Sources */,
+				7E7FC6E92C1CEC6E00C814C8 /* MainScreen.swift in Sources */,
 				7E7FC6E72C1CEC6E00C814C8 /* ASLApp.swift in Sources */,
 				7E7FC6FD2C1CF35000C814C8 /* MyHandPoseClassifier.mlmodel in Sources */,
 			);
@@ -292,7 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ASL/Preview Content\"";
-				DEVELOPMENT_TEAM = 8VWX434V59;
+				DEVELOPMENT_TEAM = 52LXM6K854;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
@@ -302,12 +330,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Litvinchuk.ASL;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Litvinchuk.ASLClassifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -323,7 +352,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ASL/Preview Content\"";
-				DEVELOPMENT_TEAM = 8VWX434V59;
+				DEVELOPMENT_TEAM = 52LXM6K854;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
@@ -333,12 +362,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Litvinchuk.ASL;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Litvinchuk.ASLClassifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
