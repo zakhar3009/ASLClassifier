@@ -16,11 +16,13 @@ struct LetterButton: View {
             .font(.title)
             .frame(height: 80)
             .frame(maxWidth: .infinity)
-            .background(letterViewModel.isGuessed ? .green : .yellow)
+            .background(
+                letterViewModel.isGuessed == .right ? .green : (letterViewModel.isGuessed == .almost ? .orange : (letterViewModel.isGuessed == .wrong ? .red : .yellow
+                )))
             .cornerRadius(15)
     }
 }
 
 #Preview {
-    LetterButton(letterViewModel: LetterViewModel(letter: "A", isGuessed: true))
+    LetterButton(letterViewModel: LetterViewModel(letter: "A", isGuessed: .default))
 }

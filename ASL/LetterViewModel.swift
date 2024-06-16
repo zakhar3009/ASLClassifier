@@ -8,9 +8,9 @@ import SwiftUI
 
 class LetterViewModel: ObservableObject, Hashable {
     var letter: String
-    @Published var isGuessed: Bool
+    @Published var isGuessed: Answer
     
-    init(letter: String, isGuessed: Bool = false) {
+    init(letter: String, isGuessed: Answer = .default) {
         self.letter = letter
         self.isGuessed = isGuessed
     }

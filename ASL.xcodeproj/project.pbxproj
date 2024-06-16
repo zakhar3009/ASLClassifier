@@ -22,7 +22,6 @@
 		7EF71FE82C1F12A9009BE2CC /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF71FE72C1F12A9009BE2CC /* CameraView.swift */; };
 		7EF71FEA2C1F13C6009BE2CC /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF71FE92C1F13C6009BE2CC /* BackButton.swift */; };
 		7EF71FEC2C1F167F009BE2CC /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF71FEB2C1F167F009BE2CC /* AnswerView.swift */; };
-		7EF71FEE2C1F228D009BE2CC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF71FED2C1F228D009BE2CC /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +41,6 @@
 		7EF71FE72C1F12A9009BE2CC /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		7EF71FE92C1F13C6009BE2CC /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		7EF71FEB2C1F167F009BE2CC /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
-		7EF71FED2C1F228D009BE2CC /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +78,6 @@
 				7E7FC6E62C1CEC6E00C814C8 /* ASLApp.swift */,
 				7E7FC6E82C1CEC6E00C814C8 /* MainScreen.swift */,
 				7EF71FE72C1F12A9009BE2CC /* CameraView.swift */,
-				7EF71FED2C1F228D009BE2CC /* DataService.swift */,
 				7EF71FEB2C1F167F009BE2CC /* AnswerView.swift */,
 				7E7FC6F62C1CED0A00C814C8 /* ImagePickerView.swift */,
 				7EF71FE52C1F0D06009BE2CC /* ASLViewModel.swift */,
@@ -174,7 +171,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E6289C02C1D80AF0060B63F /* ASLClassifierModel.mlmodel in Sources */,
-				7EF71FEE2C1F228D009BE2CC /* DataService.swift in Sources */,
 				2F19CEC82C1EEA3700930AE2 /* LetterButton.swift in Sources */,
 				7EF71FEC2C1F167F009BE2CC /* AnswerView.swift in Sources */,
 				7E7FC6F92C1CED4E00C814C8 /* ASLClassifier.swift in Sources */,
@@ -320,7 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ASL/Preview Content\"";
-				DEVELOPMENT_TEAM = 52LXM6K854;
+				DEVELOPMENT_TEAM = 655HH45MGC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
@@ -336,7 +332,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Litvinchuk.ASLClassifier;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Litvinchuk.ASLClassifier1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -352,7 +348,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ASL/Preview Content\"";
-				DEVELOPMENT_TEAM = 52LXM6K854;
+				DEVELOPMENT_TEAM = 655HH45MGC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
@@ -368,7 +364,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Litvinchuk.ASLClassifier;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Litvinchuk.ASLClassifier1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

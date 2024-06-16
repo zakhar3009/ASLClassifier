@@ -17,7 +17,7 @@ struct CameraView: View {
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject var letter: LetterViewModel
     @State var answer = Answer.default
-    
+
     var body: some View {
         ZStack {
             ImagePickerView(letterViewModel: letter, answer: $answer)
@@ -40,9 +40,7 @@ struct CameraView: View {
                     AnswerView(answer: answer)
                         .transition(.opacity)
                         .onAppear {
-                            if answer == .right {
-                                letter.isGuessed = true
-                            }
+                            letter.isGuessed = answer
                             DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                                 presentationMode.wrappedValue.dismiss()
                             }

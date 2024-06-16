@@ -28,7 +28,7 @@ struct AnswerView: View {
                     .clipShape(Circle())
             }
             if answer == .wrong {
-                Text("That's not correct, plese try again!🤞")
+                Text("That's not correct, please try again!🤞")
                     .font(.system(size: 24, weight: .bold))
                     .foregroundStyle(.white)
                     .frame(width: 250, height: 250)
