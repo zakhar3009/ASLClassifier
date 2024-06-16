@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct LetterButton: View {
-    let letter: Letter
+    @ObservedObject var letterViewModel: LetterViewModel
 
     var body: some View {
-        Text(letter.letter)
+        Text(letterViewModel.letter)
             .foregroundStyle(.black)
             .font(.title)
             .frame(height: 80)
             .frame(maxWidth: .infinity)
-            .background(letter.isGuessed ? .green : .yellow)
+            .background(letterViewModel.isGuessed ? .green : .yellow)
             .cornerRadius(15)
     }
 }
 
 #Preview {
-    LetterButton(letter: Letter(letter: "A", isGuessed: false))
+    LetterButton(letterViewModel: LetterViewModel(letter: "A", isGuessed: true))
 }
