@@ -8,8 +8,8 @@
 import ARKit
 import SwiftUI
 
-struct ImagePickerView: UIViewControllerRepresentable {
-    @ObservedObject var letterViewModel: LetterViewModel
+ struct ImagePickerView: UIViewControllerRepresentable {
+    let letter: String
     @Binding var answer: Answer
 
     func makeUIViewController(context: Context) -> UIImagePickerController {
@@ -22,7 +22,7 @@ struct ImagePickerView: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {}
 
     func makeCoordinator() -> Coordinator {
-        Coordinator(handPoseClassifier: ASLClassifier(), letter: letterViewModel.letter, answer: $answer)
+        Coordinator(handPoseClassifier: ASLClassifier(), letter: letter, answer: $answer)
     }
 
     class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -41,7 +41,6 @@ struct ImagePickerView: UIViewControllerRepresentable {
                 if let resultProbabilities = handPoseClassifier.detectSign(handImage: image) {
                     let sortedProbabilities = resultProbabilities.sorted(by: { $0.value > $1.value })
                     let result = Array(sortedProbabilities.prefix(5))
-                    print(result)
                     if result[0].key == letter {
                         answer = .right
                         return

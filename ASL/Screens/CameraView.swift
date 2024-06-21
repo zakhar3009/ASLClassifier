@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-enum Answer {
+
+enum Answer: Codable {
     case right
     case almost
     case wrong
@@ -15,12 +16,12 @@ enum Answer {
 
 struct CameraView: View {
     @Environment(\.presentationMode) var presentationMode
-    @ObservedObject var letter: LetterViewModel
+    let letter: String
     @State var answer = Answer.default
 
     var body: some View {
         ZStack {
-            ImagePickerView(letterViewModel: letter, answer: $answer)
+            ImagePickerView(letter: letter, answer: $answer)
                 .ignoresSafeArea(.all)
                 .navigationBarBackButtonHidden(true)
             VStack(alignment: .center) {
@@ -40,7 +41,8 @@ struct CameraView: View {
                     AnswerView(answer: answer)
                         .transition(.opacity)
                         .onAppear {
-                            letter.isGuessed = answer
+                            DataService.shared.solvedLetters[letter]! = answer
+                            print("\(letter) = \(answer)")
                             DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                                 presentationMode.wrappedValue.dismiss()
                             }
