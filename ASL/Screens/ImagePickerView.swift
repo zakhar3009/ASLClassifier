@@ -54,7 +54,6 @@ import SwiftUI
                     answer = .wrong
                 }
             }
-            picker.dismiss(animated: true)
         }
 
         func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

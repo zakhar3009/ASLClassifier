@@ -16,14 +16,15 @@ struct AlphabetView: View {
             ScrollView {
                 Grid(horizontalSpacing: 25, verticalSpacing: 25) {
                     ForEach(0..<(DataService.shared.solvedLetters.count/2), id: \.self) { i in GridRow {
-                        NavigationLink(destination: CameraView(letter: Array(DataService.shared.solvedLetters.keys).sorted()[i * 2]),
+                        NavigationLink(destination: CameraView(letter: Array(DataService.shared.solvedLetters.keys).sorted()[i * 2],
+                                                               learningMode: .alphabet),
                                        label: {
                             LetterButton(letter: Array(DataService.shared.solvedLetters.keys).sorted()[i * 2])
                         })
-                        NavigationLink(destination: CameraView(letter: Array(DataService.shared.solvedLetters.keys).sorted()[i * 2 + 1]),
+                        NavigationLink(destination: CameraView(letter: Array(DataService.shared.solvedLetters.keys).sorted()[i * 2 + 1],
+                                                               learningMode: .alphabet),
                                        label: {
                             LetterButton(letter: Array(DataService.shared.solvedLetters.keys).sorted()[i * 2 + 1])
-
                         })
                     }
                     }

@@ -27,7 +27,6 @@ struct ASLApp: App {
         WindowGroup {
             OnboardingView()
                 .onReceive(NotificationCenter.default.publisher(for: UIApplication.willTerminateNotification), perform: { _ in
-                    print("fdsfds")
                     saveData()
                 })
         }

@@ -31,7 +31,7 @@ struct OnboardingView: View {
                         createButton(title: "Alphabet")
                     })
                     NavigationLink(destination: {
-                        
+                        RandomLettersView()
                     }, label: {
                         createButton(title: "Random")
                     })
@@ -40,6 +40,7 @@ struct OnboardingView: View {
                 Spacer()
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
     
     @ViewBuilder
@@ -52,4 +53,8 @@ struct OnboardingView: View {
             .background(.yellow)
             .clipShape(RoundedRectangle(cornerRadius: 12))
     }
+}
+
+#Preview {
+    OnboardingView()
 }

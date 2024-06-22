@@ -14,9 +14,16 @@ enum Answer: Codable {
     case `default`
 }
 
+enum LearningMode {
+    case alphabet
+    case random
+}
+
+
 struct CameraView: View {
     @Environment(\.presentationMode) var presentationMode
     let letter: String
+    let learningMode: LearningMode
     @State var answer = Answer.default
 
     var body: some View {
@@ -25,26 +32,30 @@ struct CameraView: View {
                 .ignoresSafeArea(.all)
                 .navigationBarBackButtonHidden(true)
             VStack(alignment: .center) {
-                HStack {
-                    Button(action: {
-                        presentationMode.wrappedValue.dismiss()
-                    }, label: {
-                        BackButtonView()
-                            .padding(.top, 40)
-                    })
-                    Spacer()
+                if learningMode == .alphabet {
+                    HStack {
+                        Button(action: {
+                            presentationMode.wrappedValue.dismiss()
+                        }, label: {
+                            BackButtonView()
+                                .padding(.top, 40)
+                        })
+                        Spacer()
+                    }
+                    .padding(.top, 40)
+                    .padding(.horizontal, 5)
                 }
-                .padding(.top, 40)
-                .padding(.horizontal, 5)
                 Spacer()
                 if answer != .default {
                     AnswerView(answer: answer)
                         .transition(.opacity)
                         .onAppear {
                             DataService.shared.solvedLetters[letter]! = answer
-                            print("\(letter) = \(answer)")
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                                presentationMode.wrappedValue.dismiss()
+                            if learningMode == .alphabet {
+                                print("\(letter) = \(answer)")
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                                    presentationMode.wrappedValue.dismiss()
+                                }
                             }
                         }
                 }
