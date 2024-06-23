@@ -9,7 +9,8 @@ import SwiftUI
 
 @main
 struct ASLApp: App {
-    
+    @Environment(\.scenePhase) var scenePhase
+
     init() {
         guard let data = UserDefaults.standard.data(forKey: "UserData") else {
             return
@@ -22,18 +23,21 @@ struct ASLApp: App {
             print("Decoding error")
         }
     }
-    
+
     var body: some Scene {
         WindowGroup {
             OnboardingView()
-                .onReceive(NotificationCenter.default.publisher(for: UIApplication.willTerminateNotification), perform: { _ in
-                    saveData()
-                })
+                .onChange(of: scenePhase) { _, newPhase in
+                    if newPhase == .background {
+                        saveData()
+                    }
+                }
         }
     }
-    
+
     private func saveData() {
         do {
+            print("saving data")
             print(DataService.shared.solvedLetters)
             let userData = UserData(solvedLetters: DataService.shared.solvedLetters)
             let data = try JSONEncoder().encode(userData)
