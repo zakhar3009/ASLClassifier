@@ -19,7 +19,6 @@ enum LearningMode {
     case random
 }
 
-
 struct CameraView: View {
     @Environment(\.presentationMode) var presentationMode
     let letter: String
@@ -50,7 +49,8 @@ struct CameraView: View {
                     AnswerView(answer: answer)
                         .transition(.opacity)
                         .onAppear {
-                            DataService.shared.solvedLetters[letter]! = answer
+                            DataService.shared.solvedLetters[letter]!.append(answer)
+                            print(DataService.shared.solvedLetters)
                             if learningMode == .alphabet {
                                 print("\(letter) = \(answer)")
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {

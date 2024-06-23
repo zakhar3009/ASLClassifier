@@ -5,12 +5,13 @@
 //  Created by Zakhar Litvinchuk on 16.06.2024.
 //
 
+import SwiftUI
 import UIKit
 
 extension UIImage {
     func toCVPixelBuffer() -> CVPixelBuffer? {
         let attrs = [kCVPixelBufferCGImageCompatibilityKey: kCFBooleanTrue, kCVPixelBufferCGBitmapContextCompatibilityKey: kCFBooleanTrue] as CFDictionary
-        var pixelBuffer : CVPixelBuffer?
+        var pixelBuffer: CVPixelBuffer?
         let status = CVPixelBufferCreate(kCFAllocatorDefault, Int(self.size.width), Int(self.size.height), kCVPixelFormatType_32ARGB, attrs, &pixelBuffer)
         guard status == kCVReturnSuccess else {
             return nil
@@ -35,5 +36,20 @@ extension UIImage {
         }
 
         return nil
+    }
+}
+
+extension Color {
+    static func fromAnswer(_ answer: Answer) -> Color {
+        return switch answer {
+        case .right:
+            Color.green
+        case .almost:
+            Color.orange
+        case .wrong:
+            Color.red
+        case .default:
+            Color.yellow
+        }
     }
 }

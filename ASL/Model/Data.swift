@@ -10,34 +10,34 @@ import Foundation
 class DataService: ObservableObject {
     static let shared = DataService()
     private init() {}
-    @Published var solvedLetters: [String : Answer] = ["A" : .default,
-                                                   "B" : .default,
-                                                   "C" : .default,
-                                                   "D" : .default,
-                                                   "E" : .default,
-                                                   "F" : .default,
-                                                   "G" : .default,
-                                                   "H" : .default,
-                                                   "I" : .default,
-                                                   "J" : .default,
-                                                   "K" : .default,
-                                                   "L" : .default,
-                                                   "M" : .default,
-                                                   "N" : .default,
-                                                   "O" : .default,
-                                                   "P" : .default,
-                                                   "Q" : .default,
-                                                   "R" : .default,
-                                                   "S" : .default,
-                                                   "T" : .default,
-                                                   "U" : .default,
-                                                   "V" : .default,
-                                                   "W" : .default,
-                                                   "X" : .default,
-                                                   "Y" : .default,
-                                                   "Z" : .default]
+    @Published var solvedLetters: [String: [Answer]] = ["A": [],
+                                                        "B": [],
+                                                        "C": [],
+                                                        "D": [],
+                                                        "E": [],
+                                                        "F": [],
+                                                        "G": [],
+                                                        "H": [],
+                                                        "I": [],
+                                                        "J": [],
+                                                        "K": [],
+                                                        "L": [],
+                                                        "M": [],
+                                                        "N": [],
+                                                        "O": [],
+                                                        "P": [],
+                                                        "Q": [],
+                                                        "R": [],
+                                                        "S": [],
+                                                        "T": [],
+                                                        "U": [],
+                                                        "V": [],
+                                                        "W": [],
+                                                        "X": [],
+                                                        "Y": [],
+                                                        "Z": []]
 }
 
 struct UserData: Codable {
-    let solvedLetters: [String : Answer]
+    let solvedLetters: [String: [Answer]]
 }

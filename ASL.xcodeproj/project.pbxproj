@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2F19CEC82C1EEA3700930AE2 /* LetterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F19CEC72C1EEA3700930AE2 /* LetterButton.swift */; };
+		2FE4F6B82C2823BD008B5726 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE4F6B72C2823BD008B5726 /* Statistics.swift */; };
 		7E0345592C25DBC900F370FC /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0345582C25DBC900F370FC /* Onboarding.swift */; };
 		7E1A07D82C1E51CB00E80C40 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1A07D72C1E51CB00E80C40 /* Extensions.swift */; };
 		7E35824B2C26D7E8003D525F /* RandomLetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35824A2C26D7E8003D525F /* RandomLetters.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		2F19CEC72C1EEA3700930AE2 /* LetterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterButton.swift; sourceTree = "<group>"; };
+		2FE4F6B72C2823BD008B5726 /* Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
 		7E0345582C25DBC900F370FC /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		7E1A07D72C1E51CB00E80C40 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7E35824A2C26D7E8003D525F /* RandomLetters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomLetters.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				7E35824A2C26D7E8003D525F /* RandomLetters.swift */,
 				7EDBA7492C25E0380041F7A9 /* ExamplesList.swift */,
 				7E7FC6F62C1CED0A00C814C8 /* ImagePickerView.swift */,
+				2FE4F6B72C2823BD008B5726 /* Statistics.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				7EF71FEC2C1F167F009BE2CC /* AnswerView.swift in Sources */,
 				7E7FC6F92C1CED4E00C814C8 /* ASLClassifier.swift in Sources */,
 				7E7FC6F72C1CED0A00C814C8 /* ImagePickerView.swift in Sources */,
+				2FE4F6B82C2823BD008B5726 /* Statistics.swift in Sources */,
 				7E1A07D82C1E51CB00E80C40 /* Extensions.swift in Sources */,
 				7EF71FE82C1F12A9009BE2CC /* CameraView.swift in Sources */,
 				7EF71FEA2C1F13C6009BE2CC /* BackButton.swift in Sources */,
@@ -356,7 +360,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ASL/Preview Content\"";
-				DEVELOPMENT_TEAM = 52LXM6K854;
+				DEVELOPMENT_TEAM = 655HH45MGC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
@@ -372,7 +376,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Litvinchuk.ASLClassifier1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Litvinchuk.ASLClassifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -388,7 +392,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ASL/Preview Content\"";
-				DEVELOPMENT_TEAM = 52LXM6K854;
+				DEVELOPMENT_TEAM = 655HH45MGC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
@@ -404,7 +408,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Litvinchuk.ASLClassifier1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Litvinchuk.ASLClassifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

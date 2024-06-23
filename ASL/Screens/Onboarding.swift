@@ -35,6 +35,12 @@ struct OnboardingView: View {
                     }, label: {
                         createButton(title: "Random")
                     })
+                    NavigationLink(destination: {
+                        Statistics()
+                    }, label: {
+                        createButton(title: "Statistics")
+                    })
+                    .padding(.top, 20)
                 }
                 .padding(.top, 40)
                 Spacer()
@@ -42,7 +48,7 @@ struct OnboardingView: View {
         }
         .navigationBarBackButtonHidden(true)
     }
-    
+
     @ViewBuilder
     private func createButton(title: String) -> some View {
         Text(title)

@@ -17,15 +17,17 @@ struct LetterButton: View {
             .frame(height: 80)
             .frame(maxWidth: .infinity)
             .background {
-                switch dataService.solvedLetters[letter]! {
+                switch dataService.solvedLetters[letter]!.last {
                 case .right:
-                    return Color.green
+                    Color.green
                 case .almost:
-                    return Color.orange
+                    Color.orange
                 case .wrong:
-                    return Color.red
+                    Color.red
                 case .default:
-                    return Color.yellow
+                    Color.yellow
+                case .none:
+                    Color.yellow
                 }
             }
             .cornerRadius(15)
