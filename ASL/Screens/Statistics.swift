@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Statistics: View {
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             Text("Played letters:")
                 .font(.title3)
                 .frame(maxWidth: .infinity, alignment: .topLeading)

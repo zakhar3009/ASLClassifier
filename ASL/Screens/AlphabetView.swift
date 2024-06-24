@@ -13,7 +13,7 @@ struct AlphabetView: View {
         NavigationStack {
             Text("Learn ASL")
                 .font(.largeTitle)
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 Grid(horizontalSpacing: 25, verticalSpacing: 25) {
                     ForEach(0..<(DataService.shared.solvedLetters.count/2), id: \.self) { i in GridRow {
                         NavigationLink(destination: CameraView(letter: Array(DataService.shared.solvedLetters.keys).sorted()[i * 2],
